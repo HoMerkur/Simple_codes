@@ -18,8 +18,7 @@ class Window(QtWidgets.QWidget):
         self.url = "https://finans.mynet.com/borsa/"
 
         self.headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
-                          "Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.62"}
+            "User-Agent": "TheUserAgent"}
         response = requests.get(self.url, headers=self.headers)
 
         content = response.content

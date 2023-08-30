@@ -59,8 +59,7 @@ class Window(QtWidgets.QWidget):
     def refresh(self):
         url = "https://finans.mynet.com/borsa/"
 
-        headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
-                                 "Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.62"}
+        headers = {"User-Agent": "TheUserAgent"}
         response = requests.get(url, headers=headers)
 
         content = response.content

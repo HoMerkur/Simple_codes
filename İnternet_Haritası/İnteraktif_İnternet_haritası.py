@@ -18,8 +18,7 @@ internet_hizi_haritasi = folium.FeatureGroup(name="İndirme Hızları")
 
 url = "https://www.speedtest.net/global-index"
 headers = {
-    'User_Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-                  " (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.188"}
+    'User_Agent': "TheUserAgent"}
 response = requests.get(url, headers=headers)
 content = response.content
 html_veri = BeautifulSoup(content, "html.parser")
